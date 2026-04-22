@@ -1,0 +1,47 @@
+package academy.devdojo.maratonajava.introducao;
+
+public class Aula04Operadores {
+    public static void main(String[] args) {
+        int numero01 = 10;
+        double numero02 = (double)20.0F;
+        System.out.println("A subtração do numero 2 menos o numero 1 é: " + (numero02 - (double)numero01));
+        double resto = (double)0.0F;
+        System.out.println(resto);
+        boolean isDezMaiorQueVinte = false;
+        boolean isDezMenorQueVinte = true;
+        boolean isDezIgualAoVinte = false;
+        boolean isDezIGualAoDez = true;
+        boolean isDezIndiferenteAoDez = false;
+        System.out.println("isDezMaiorQueVinte: " + isDezMaiorQueVinte);
+        System.out.println("isDezMenorQueVinte: " + isDezMenorQueVinte);
+        System.out.println("isDezIgualAoVinte: " + isDezIgualAoVinte);
+        System.out.println("isDezIgualAoDez: " + isDezIGualAoDez);
+        System.out.println("isDezIndiferenteAoDez: " + isDezIndiferenteAoDez);
+        float salario = 3500.0F;
+        int idade = 35;
+        boolean isDentroDaLeiMaiorQueTrinta = idade >= 30 && salario >= 4612.0F;
+        boolean isDentroDaLeiMenorQueTrinta = idade < 30 && salario >= 3381.0F;
+        System.out.println("isDentroDaLeiMaiorQueTrinta: " + isDentroDaLeiMaiorQueTrinta);
+        System.out.println("isDentroDaLeiMenorQueTrinta: " + isDentroDaLeiMenorQueTrinta);
+        double ValorTotalContaCorrente = (double)200.0F;
+        double ValorTotalContaPoupanca = (double)10000.0F;
+        float ValorPlaystation = 5000.0F;
+        boolean isPlaystationCincoCompravel = ValorTotalContaCorrente >= (double)ValorPlaystation || ValorTotalContaPoupanca >= (double)ValorPlaystation;
+        boolean isPlaystationCincoNaoCompravel = ValorTotalContaCorrente <= (double)ValorPlaystation && ValorTotalContaPoupanca <= (double)ValorPlaystation;
+        System.out.println("isPlaystationCincoCompravel: " + isPlaystationCincoCompravel);
+        System.out.println("isPlaystationCincoNaoCompravel: " + isPlaystationCincoNaoCompravel);
+        double bonus = (double)1800.0F;
+        bonus += (double)1000.0F;
+        bonus -= (double)1000.0F;
+        bonus *= (double)2.0F;
+        bonus /= (double)2.0F;
+        bonus %= (double)2.0F;
+        System.out.println(bonus);
+        int contador = 0;
+        --contador;
+        int contador2 = 0;
+        ++contador2;
+        System.out.println("Contador 1 equivale: " + contador);
+        System.out.println("Contador 2 equivale: " + contador2);
+    }
+}
